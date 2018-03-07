@@ -33,13 +33,20 @@ h2 {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.music-cat {
+.music-cat-bg {
     background: #bc4e9c;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f80759, #bc4e9c);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.picture-section-bg {
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /*--------------------------------------------Special margins paddings text*/
@@ -163,6 +170,9 @@ h1 {
 /*------------------------------------Video Section*/
 
 .video-link-img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
     -webkit-box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
     -moz-box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
     box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
@@ -173,6 +183,8 @@ h1 {
 }
 
 /*------------------------------------Video Section*/
+
+/*------------------------------------Picture Gallery*/
 
 .gallery-img-1 {
      height: 30vw;
@@ -210,6 +222,9 @@ h1 {
     background-size: cover;
 }
 
+.picture-section {
+    color: #fff;
+}
 
 /*------------------------------------Footer*/
 
