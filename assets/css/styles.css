@@ -8,25 +8,38 @@ body {
 }
 
 p {
-    font-size: .8em;
+    font-size: 2.2vw;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1.5px;
-    line-height: 2em;     
+    line-height: 2em;
+    margin: 0 0 15px;
+}
+
+h2 {
+    font-size: 4.5vw;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 /*------------------------------------Colors*/
 
 .welcome-message-bg {
-    background: #f7ff00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f7ff00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #db36a4, #f7ff00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .music-cat {
-    background: #bc4e9c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*--------------------------------------------Special margins paddings text*/
@@ -40,15 +53,25 @@ background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, F
 }
 
 .centered-block {
+    display: block;
     margin: 0 auto;
+}
+
+.container-fluid,
+.spacing-bottom {
+    margin-bottom: 15px;
+}
+
+.spacing-top {
+    margin-top: 30px;
 }
 
 /*------------------------------------Navbar*/
 
 .navbar {
-    -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0,0,0,0.67);
-    -moz-box-shadow: inset 0px 0px 17px -5px rgba(0,0,0,0.67);
-    box-shadow: inset 0px -6px 5px -5px rgba(0,0,0,0.67);
+    -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: inset 0px 0px 17px -5px rgba(0, 0, 0, 0.67);
+    box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.67);
 }
 
 .navbar-brand {
@@ -66,9 +89,7 @@ background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, F
     /* ease-in */
 }
 
-.navbar-toggler {
-    
-}
+.navbar-toggler {}
 
 
 
@@ -95,8 +116,7 @@ header {
     background-size: cover;
     display: flex;
     align-items: center;
-    margin: 0 auto 5%;
-    padding-bottom: 2.5%;
+    margin: 0 auto;
 }
 
 .welcome-message {
@@ -115,6 +135,11 @@ h1 {
     text-shadow: 0px 5px 10px red;
 }
 
+.main-paragraph {
+    font-size: 3vw;
+    margin: 10px 0;
+}
+
 /*------------------------------------Intro*/
 
 .intro {
@@ -128,15 +153,63 @@ h1 {
 
 .music-cat-section {
     color: #fff;
+    padding-top: 15px;
 }
 
-.music-cat-link {
-    max-height: 420px;
+.link-img {
+    width: 70%;
 }
 
-img {
-    max-height: 400px;
+/*------------------------------------Video Section*/
+
+.video-link-img {
+    -webkit-box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
+    box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
 }
+
+.video-section {
+    color: #f80759;
+}
+
+/*------------------------------------Video Section*/
+
+.gallery-img-1 {
+     height: 30vw;
+     background: url("../images/dj.jpg")no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gallery-img-2 {
+     height: 30vw;
+     background: url("../images/md.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gallery-img-3 {
+     height: 30vw;
+     background: url("../images/mn.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gallery-img-4 {
+     height: 30vw;
+     background: url("../images/pt.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 /*------------------------------------Footer*/
 
@@ -145,42 +218,94 @@ img {
     letter-spacing: 30px;
 }
 
+h3 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
 /*------------------------------------Media Queries*/
 
-/*@media screen and (min-width: 576px) {*/
+@media screen and (min-width: 768px) {
+    .container {
+        display: table;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
 
-/*    .welcome-section {*/
+    .helper {
+        #position: absolute;
+        #top: 50%;
+        display: table-cell;
+        vertical-align: middle;
+    }
 
-/*        height: 50vw;*/
+    .content {
+        #position: relative;
+        #top: -50%;
+        margin: 0 auto;
+        width: 85%;
+    }
 
-/*    }*/
+    p {
+        font-size: 1.7vw;
+        margin: 0 0 15px;
+    }
 
-/*}*/
+    h2 {
+        font-size: 4vw;
+    }
 
-/*@media screen and (min-width: 768px) {*/
+    h3 {
+        font-size: 3vw;
+    }
 
-/*    .welcome-section {*/
+    .music-cat {
+        padding: 50px 30px 50px 0;
+    }
 
-/*        height: 55vw;*/
-
-/*    }*/
-
-/*}*/
+}
 
 @media screen and (min-width: 1200px) {
     .welcome-section {
         height: 80vh;
         /*max-width: 1500px;*/
-        margin: 0 auto 2%;
+        margin: 0 auto 15px;
         background: url("../images/monkeesbw.jpg") no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
-    
+
     .intro {
         font-size: 2vw;
         line-height: 4vw;
+    }
+
+    p {
+        font-size: 1.2vw;
+        margin: 0 0 15px;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    .music-cat {
+        padding: 75px 30px 75px 0;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    .content {
+        #position: relative;
+        #top: -50%;
+        margin: 0 auto;
+        width: 53%;
     }
 }
