@@ -7,11 +7,49 @@ body {
     font-family: 'Happy Monkey', cursive;
 }
 
+p {
+    font-size: .8em;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 2em;     
+}
+
 /*------------------------------------Colors*/
+
+.welcome-message-bg {
+    background: #f7ff00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.music-cat {
+    background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 /*--------------------------------------------Special margins paddings text*/
 
+.remove-padding {
+    padding: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.centered-block {
+    margin: 0 auto;
+}
+
 /*------------------------------------Navbar*/
+
+.navbar {
+    -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 0px 0px 17px -5px rgba(0,0,0,0.67);
+    box-shadow: inset 0px -6px 5px -5px rgba(0,0,0,0.67);
+}
 
 .navbar-brand {
     padding: 0;
@@ -28,7 +66,11 @@ body {
     /* ease-in */
 }
 
-.navbar-toggler {}
+.navbar-toggler {
+    
+}
+
+
 
 /*--------------------------------------------Hover.css*/
 
@@ -45,7 +87,7 @@ header {
 /*------------------------------------Welcome*/
 
 .welcome-section {
-    height: 35vh;
+    height: 53vw;
     background: url("../images/monkeesbw.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -63,14 +105,37 @@ header {
     margin: auto 0 0;
     padding: 0;
     color: #FFF;
-    background-color: #000;
 }
 
 h1 {
-    font-size: 5vh;
-    text-transform: uppercase;
+    font-size: 5vw;
     padding-top: 5px;
     font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0px 5px 10px red;
+}
+
+/*------------------------------------Intro*/
+
+.intro {
+    font-size: 3vw;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 6vw;
+}
+
+/*------------------------------------Music Catalogue*/
+
+.music-cat-section {
+    color: #fff;
+}
+
+.music-cat-link {
+    max-height: 420px;
+}
+
+img {
+    max-height: 400px;
 }
 
 /*------------------------------------Footer*/
@@ -82,22 +147,40 @@ h1 {
 
 /*------------------------------------Media Queries*/
 
-@media screen and (min-width: 576px) {
-    .welcome-section {
-        height: 40vh;
-    }
-}
+/*@media screen and (min-width: 576px) {*/
 
-@media screen and (min-width: 768px) {
-    .welcome-section {
-        height: 55vh;
-    }
-}
+/*    .welcome-section {*/
+
+/*        height: 50vw;*/
+
+/*    }*/
+
+/*}*/
+
+/*@media screen and (min-width: 768px) {*/
+
+/*    .welcome-section {*/
+
+/*        height: 55vw;*/
+
+/*    }*/
+
+/*}*/
 
 @media screen and (min-width: 1200px) {
     .welcome-section {
         height: 80vh;
-        max-width: 1350px;
+        /*max-width: 1500px;*/
         margin: 0 auto 2%;
+        background: url("../images/monkeesbw.jpg") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .intro {
+        font-size: 2vw;
+        line-height: 4vw;
     }
 }
