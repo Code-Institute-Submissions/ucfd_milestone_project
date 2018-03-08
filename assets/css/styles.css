@@ -20,6 +20,9 @@ h2 {
     font-weight: 700;
     margin-bottom: 30px;
     text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 10px silver;
 }
 
 /*------------------------------------Colors*/
@@ -43,10 +46,12 @@ h2 {
 }
 
 .picture-section-bg {
-    background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*--------------------------------------------Special margins paddings text*/
@@ -71,6 +76,10 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 
 .spacing-top {
     margin-top: 30px;
+}
+
+.text-padding {
+    padding: 2% 5%;
 }
 
 /*------------------------------------Navbar*/
@@ -187,8 +196,8 @@ h1 {
 /*------------------------------------Picture Gallery*/
 
 .gallery-img-1 {
-     height: 30vw;
-     background: url("../images/dj.jpg")no-repeat;
+    height: 30vw;
+    background: url("../images/dj.jpg")no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -196,8 +205,8 @@ h1 {
 }
 
 .gallery-img-2 {
-     height: 30vw;
-     background: url("../images/md.jpg") no-repeat center;
+    height: 30vw;
+    background: url("../images/md.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -205,8 +214,8 @@ h1 {
 }
 
 .gallery-img-3 {
-     height: 30vw;
-     background: url("../images/mn.jpg") no-repeat center;
+    height: 30vw;
+    background: url("../images/mn.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -214,8 +223,8 @@ h1 {
 }
 
 .gallery-img-4 {
-     height: 30vw;
-     background: url("../images/pt.jpg") no-repeat;
+    height: 30vw;
+    background: url("../images/pt.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -224,6 +233,12 @@ h1 {
 
 .picture-section {
     color: #fff;
+}
+
+/*------------------------------------Hire Us Section*/
+
+.fa.fa-birthday-cake {
+    font-size: 40vw;
 }
 
 /*------------------------------------Footer*/
@@ -242,27 +257,6 @@ h3 {
 /*------------------------------------Media Queries*/
 
 @media screen and (min-width: 768px) {
-    .container {
-        display: table;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .helper {
-        #position: absolute;
-        #top: 50%;
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .content {
-        #position: relative;
-        #top: -50%;
-        margin: 0 auto;
-        width: 85%;
-    }
 
     p {
         font-size: 1.7vw;
