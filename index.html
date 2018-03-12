@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Monkees - Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500|Roboto:700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
 </head>
 
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-md navbar-light bottom-inner-shadow">
+            <a class="navbar-brand cover-picture grow" href="#"></a>
 
             <!-- Navbar Collapsible Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Listen Now! <span class="sr-only">(Listen to Monkees Music)</span></a>
+                        <a class="nav-link" href="#"><i class="fas fa-music grow"></i> Listen Now! <span class="sr-only">(Listen to Monkees Music)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Video <span class="sr-only">(A Monkees Video)</span></a>
+                        <a class="nav-link" href="#"><i class="fas fa-video grow"></i> Video <span class="sr-only">(A Monkees Video)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery <span class="sr-only">(Monkees Picture Gallery)</span></a>
+                        <a class="nav-link" href="#"><i class="fas fa-images grow"></i> Gallery <span class="sr-only">(Monkees Picture Gallery)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hire Us! <span class="sr-only">(Hire the Monkees)</span></a>
+                        <a class="nav-link" href="#"><i class="fas fa-birthday-cake grow"></i> Hire Us! <span class="sr-only">(Hire the Monkees)</span></a>
                     </li>
                 </ul>
             </div>
@@ -47,27 +46,40 @@
         <!-- /.Navbar -->
     </header>
 
-    <!-- Callout -->
-    <div class="container-fluid remove-padding">
-        <div class="welcome-section">
-            <div class="row welcome-message welcome-message-bg">
-                <div class="col-12">
-                    <section class="text-center">
-                        <h1 class="uppercase">Welcome to The Monkees.com!</h1>
-                    </section>
+         <!-- Callout -->
+        <div class="container-fluid">
+        <div class=" welcome-section hold-img-and-text ">
+            <div class="row">
+                <div class="col-6 col-md-3 remove-padding ">
+                    <div class="welcome-pic pic1 cover-picture "></div>
                 </div>
+                <div class="col-6 col-md-3 remove-padding ">
+                    <div class="welcome-pic pic2 cover-picture "></div>
+                </div>
+
+                <div class="col-6 col-md-3 remove-padding ">
+                    <div class="welcome-pic pic3 cover-picture "></div>
+                </div>
+                <div class="col-6 col-md-3 remove-padding ">
+                    <div class="welcome-pic pic4 cover-picture "></div>
+                </div>
+                <i class="fas fa-heart over-pic-higher "></i>
+                <h1 class="Monkees-header over-pic text-center uppercase ">The Monkees</h1>
             </div>
         </div>
     </div>
+
     <!-- /.Callout -->
 
     <!-- Intro Section -->
-    <div class="container-fluid intro-container">
+    <div class="container-fluid intro-container section-seperator-padding ">
         <section class="intro">
-            <div class="row">
-                <div class="col-12">
-                    <p class="main-paragraph text-center">Here we come, walking down your street.<br> We get the lovliest looks from, everyone we meet!<br>
-                        <strong class="uppercase">Hey hey we're the Monkees!</strong><br> And welcome to our website!
+            <div class="row section-seperator-padding">
+                <div class="col-12 hug-text-central ">
+                    <p class="welcome-paragraph text-center ">Here we come, walking down your street.</p>
+                    <p class="welcome-paragraph text-center ">We get the loveliest looks from, everyone we meet!</p>
+                    <h2 class="text-center medium-margin-bottom strap-line "><strong class="uppercase ">Hey hey we're the Monkees!</strong></h2>
+                    <p class="welcome-paragraph text-center ">And welcome to our website!</p>
                     </p>
                 </div>
             </div>
@@ -76,18 +88,25 @@
     <!-- /.Intro Section -->
 
     <!-- Music Catalogue -->
-    <div class="container-fluid music-cat music-cat-bg">
+    <div class="container-fluid music-cat-bg section-seperator-padding text-center">
         <section class="music-cat-section">
             <div class="row align-items-center">
-                <div class="col-12 col-md-5 spacing-bottom">
-                    <a href="#" class="music-cat-link">
-                        <img class="rounded-circle centered-block link-img" src="assets/images/album2.jpg"></img>
+                <div class="col-12">
+                    <i class="fas fa-music large-margin-bottom"></i>
+                </div>
+                <div class="col-12">
+                    <h2 class="uppercase large-margin-bottom">All of your favourites</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="# " class="music-cat-link">
+                        <img class="rounded-circle centered-block link-img large-margin-bottom grow" src="assets/images/album2.jpg "></img>
                     </a>
                 </div>
-                <div class="col-12 col-md-7">
-                    <h2 class="uppercase text-center">All of your favourites!</h2>
-                    <p class="text-center">We've been lucky enough to release some songs that have been really popular over the years and we would love to share them with you again!</p>
-                    <p class="text-center">Please feel free to listen to some of our favourites, we hope you still enjoy them as much as we do!</p>
+                <div class="col-12 col-md-6 large-margin-top large-margin-bottom hug-text-central padding-fix-left">
+                    <p class="music-cat-para">We've been lucky enough to release some songs that have been really popular over the years and we would love to share them with you again!</p>
+                    <p class="music-cat-para">Please feel free to listen to some of our favourites, we hope you still enjoy them as much as we do!</p>
                 </div>
             </div>
         </section>
@@ -95,18 +114,25 @@
     <!-- /.Music Catalogue -->
 
     <!-- Video Section-->
-    <div class="container-fluid video-container">
+    <div class="container-fluid video-container section-seperator-padding text-center ">
         <section class="video-section">
+            <div class="row">
+                <div class="col-12">
+                    <i class="fas fa-video large-margin-bottom"></i>
+                </div>
+                <div class="col-12">
+                    <h2 class="uppercase"> Watch our Video</h2>
+                </div>
+            </div>
             <div class="row align-items-center">
-                <div class="col-12 col-md-5 order-md-1 spacing-bottom spacing-top">
-                    <a href="#">
-                    <img class="centered-block link-img video-link-img" src="assets/images/MonkeesDDB.jpeg"></img>
+                <div class="col-12 col-md-5 order-md-1 ">
+                    <a href="# ">
+                    <img class="centered-block link-img video-link-img large-margin-bottom grow" src="assets/images/MonkeesDDB.jpeg "></img>
                     </a>
                 </div>
-                <div class="col-12 col-md-7 spacing-top spacing-bottom text-center">
-                    <h2 class="uppercase">Watch our Video</h2>
-                    <p>Daydream Believer was a chart topping success all the way back in 1968!</p>
-                    <p>For us, the video we recorded for the single was one of the highlights of our careers. Watch it again and help us reminisce... </p>
+                <div class="col-12 col-md-7 large-margin-top large-margin-bottom hug-text-central padding-fix-right">
+                    <p class="video-section-para">Daydream Believer was a chart topping success all the way back in 1968!</p>
+                    <p class="video-section-para ">For us, the video we recorded for the single was one of the highlights of our careers. Watch it again and help us reminisce... </p>
                 </div>
             </div>
         </section>
@@ -115,36 +141,31 @@
 
 
     <!-- Picture Gallery-->
-    <div>
-        <section class="picture-section picture-section-bg spacing-bottom">
-            <div class="row no-gutters spacing-bottom">
-                <div class="col-6 col-md-3">
-                    <a href="#" class="gallery-link">
-                        <div class="gallery-img-1"></div>
-                    </a>
+    <div class="container-fluid picture-section-bg text-center section-seperator-padding">
+        <section class="picture-section">
+            <div class="row">
+                <div class="col-12">
+                    <i class="fas fa-images large-margin-bottom"></i>
                 </div>
-                <div class="col-6 col-md-3">
-                    <a href="#" class="gallery-link">
-                        <div class="gallery-img-2"></div>
-                    </a>
+                <div class="col-12">
+                    <h2 class="uppercase"> Photo Gallery</h2>
                 </div>
-                <div class="col-6 col-md-3">
-                    <a href="#" class="gallery-link">
-                        <div class="gallery-img-3"></div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="#" class="gallery-link">
-                        <div class="gallery-img-4"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 remove-padding large-margin-bottom">
+                    <a href="# " class="gallery-link">
+                        <div class="picture-transition grow">
+                            <img class="bottom-pic transition-pic" src="assets/images/MKSRECENT.jpg " />
+                            <img class="top-pic transition-pic" src="assets/images/MKSPAST.jpg " />
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h2 class="uppercase">Photo Gallery</h2>
-                        <p>Come and view us as we were then and now!</p>
-                        <p>We've put together a collection of our fondest memories in visual format for you to enjoy (we hope)!</p>
+            <div class="container-fluid medium-margin-top">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <p class="pic-section-para">Come and view us as we were young and old!</p>
+                        <p class="pic-section-para">We've put together a collection of our fondest memories in visual format, we hope you enjoy!</p>
                     </div>
                 </div>
             </div>
@@ -153,22 +174,25 @@
     <!-- /.Picture Gallery-->
 
     <!-- Hire Us Section -->
-    <div class="container-fluid spacing-top">
-        <section class="hire-us-section">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="uppercase">Hire Us!</h2>
+    <div class="container-fluid section-seperator-padding text-center">
+        <section class="hire-us-section ">
+            <div class="row ">
+                <div class="col-12">
+                    <i class="fas fa-birthday-cake large-margin-bottom"></i>
+                </div>
+                <div class="col-12 medium-margin-bottom">
+                    <h2 class="uppercase ">Hire Us!</h2>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row hug-text-central">
                 <div class="col-12 col-sm-6">
-                    <p class="text-padding">We love our fans and want to bring our music closer to you! Would you like a Wedding to remember?  Would you like a conference that you'll never forget?</p>
+                    <p class="hire-section-para">We love our fans and want to bring our music closer to you! Would you like a Wedding to remember? How about a conference that you'll never forget?</p>
                 </div>
-                <div class="col-12 col-sm-6 spacing-bottom">
-                    <p class="text-padding">  Whatever the occasion, please contact us if you would like us to perform some of our songs at a venue of your chosing!</p>
+                <div class="col-12 col-sm-6">
+                    <p class="hire-section-para"> Whatever the occasion, please contact us if you would like us to perform some of our songs at a venue of your choosing!</p>
                 </div>
-                <a class="centered-block" href="#">
-                    <button type="button" class="btn btn-success">Interested?</button>
+                <a class="centered-block large-margin-top" href="# ">
+                    <button type="button " class="btn hire-us-btn uppercase grow">Book Now!</button>
                 </a>
             </div>
         </section>
@@ -176,36 +200,32 @@
     <!-- /.Hire Us Section -->
 
     <!-- Footer -->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <hr>
-            </div>
-            <div class="col-sm-6 col-md-8 spacing-bottom">
-
+    <footer class="container-fluid footer-bg footer-padding">
+        <div class="row ">
+            <div class="col-sm-6 col-md-7">
                 <h3>About Us</h3>
-                <p>
+                <p class="footer-para">
                     The Monkees are an American rock and pop band originally active between 1965 and 1971, with subsequent reunion albums and tours in the decades that followed. They were formed in Los Angeles in 1965 for the American television series The Monkees, which
                     aired from 1966 to 1968. The musical acting quartet was composed of Americans Micky Dolenz, Michael Nesmith, Peter Tork and Davy Jones.
                 </p>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-5 ">
                 <h3>Hear More!</h3>
-                <p>
+                <p class="footer-para">
                     If you would like to hear more from us please visit our social media pages.
                 </p>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+                <ul class="list-inline text-center ">
+                    <li class="list-inline-item "><a target="_blank " href="# "><i class="fab fa-facebook "></i></a></li>
+                    <li class="list-inline-item "><a target="_blank " href="# "><i class="fab fa-twitter "></i></a></li>
+                    <li class="list-inline-item "><a target="_blank " href="# "><i class="fab fa-youtube "></i></a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <!-- /.Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 
 </body>
 

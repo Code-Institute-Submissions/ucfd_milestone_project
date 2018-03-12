@@ -4,54 +4,49 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-size: 2.2vw;
-    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     letter-spacing: 1.5px;
     line-height: 2em;
-    margin: 0 0 15px;
+    margin: 0 0 30px;
 }
 
 h2 {
-    font-size: 4.5vw;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 800;
     margin-bottom: 30px;
-    text-decoration: underline;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-shadow: 2px 1px 10px silver;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px 10px #fafaf7;
+}
+
+.cover-picture {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*------------------------------------Colors*/
 
-.welcome-message-bg {
-    background: #f7ff00;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #db36a4, #f7ff00);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+.welcome-message-bg {}
 
 .music-cat-bg {
-    background: #bc4e9c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f80759, #bc4e9c);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #fdfff4;
 }
 
 .picture-section-bg {
-    background: #000046;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fffafc;
+}
+
+.footer-bg {
+    background-color: #4a4a4f;
 }
 
 /*--------------------------------------------Special margins paddings text*/
@@ -69,98 +64,158 @@ h2 {
     margin: 0 auto;
 }
 
-.container-fluid,
-.spacing-bottom {
+.small-margin-top {
+    margin-top: 15px;
+}
+
+.small-margin-bottom {
     margin-bottom: 15px;
 }
 
-.spacing-top {
+.medium-margin-top {
     margin-top: 30px;
 }
 
-.text-padding {
-    padding: 2% 5%;
+.medium-margin-bottom {
+    margin-bottom: 30px;
 }
 
-/*------------------------------------Navbar*/
+.large-margin-top {
+    margin-top: 50px;
+}
 
-.navbar {
+.large-margin-bottom {
+    margin-bottom: 50px;
+}
+
+.section-seperator-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.bottom-inner-shadow {
     -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: inset 0px 0px 17px -5px rgba(0, 0, 0, 0.67);
     box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.67);
 }
 
+.hold-img-and-text {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.over-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.over-pic-higher {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hug-text-central {
+    padding: 0 10%;
+}
+
+.link-img {
+    width: 70%;
+}
+
+/*------------------------------------Navbar*/
+
 .navbar-brand {
-    padding: 0;
-    width: 185px;
-    background-image: url(../images/MonkeesLogo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 150px;
+    height: 60px;
+    background-image: url("../images/MonkeesLogo.jpg");
     background-size: contain;
-    min-height: 75px;
-    -webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-    -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-    -o-transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-    transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-    /* ease-in */
+}
+
+.fas {
+    font-size: 25px;
+    padding: 0 15px;
+    color: #ff5f5f;
+}
+
+.nav-item {
+    padding: 10px 0;
 }
 
 .navbar-toggler {}
 
-
+.navbar-toggle-icon {}
 
 /*--------------------------------------------Hover.css*/
 
-/*------------------------------------Header*/
+a i:hover {
+    color: #e80e0e;
 
-header {
-    width: 100%;
-    height: 100%: background-image: url(../images/MonkeesLogo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
+
+a button:hover {
+    background-color: #e80e0e;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*------------------------------------Header*/
 
 /*------------------------------------Welcome*/
 
-.welcome-section {
-    height: 53vw;
-    background: url("../images/monkeesbw.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+.fa-heart {
+    font-size: 35px;
+    color: #ff5f5f;
 }
 
-.welcome-message {
+.Monkees-header {
+    font-size: 40px;
+    color: #fff;
     width: 100%;
-    display: block;
-    margin: auto 0 0;
-    padding: 0;
-    color: #FFF;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-shadow: 0px 5px 10px #ff5f5f;
+
 }
 
-h1 {
-    font-size: 5vw;
-    padding-top: 5px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-shadow: 0px 5px 10px red;
+.welcome-pic {
+    height: 200px;
 }
 
-.main-paragraph {
-    font-size: 3vw;
-    margin: 10px 0;
+.pic1 {
+    background-image: url("../images/MK1.jpg");
+}
+
+.pic2 {
+    background-image: url("../images/MK4.jpg");
+}
+
+.pic3 {
+    background-image: url("../images/MK2.jpg");
+}
+
+.pic4 {
+    background-image: url("../images/MK3.jpg");
+}
+
+.strap-line {
+    font-size: 20px;
 }
 
 /*------------------------------------Intro*/
 
 .intro {
     font-size: 3vw;
-    font-family: "Raleway", sans-serif;
     letter-spacing: 1.5px;
     line-height: 6vw;
 }
@@ -168,12 +223,7 @@ h1 {
 /*------------------------------------Music Catalogue*/
 
 .music-cat-section {
-    color: #fff;
-    padding-top: 15px;
-}
-
-.link-img {
-    width: 70%;
+    color: #000;
 }
 
 /*------------------------------------Video Section*/
@@ -187,134 +237,305 @@ h1 {
     box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
 }
 
-.video-section {
-    color: #f80759;
-}
+.video-section {}
 
 /*------------------------------------Video Section*/
 
 /*------------------------------------Picture Gallery*/
 
-.gallery-img-1 {
-    height: 30vw;
-    background: url("../images/dj.jpg")no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.picture-transition {
+    position: relative;
+    height: 250px;
+    width: 320px;
+    margin: 0 auto;
 }
 
-.gallery-img-2 {
-    height: 30vw;
-    background: url("../images/md.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.picture-transition img {
+    position: absolute;
+    left: 0;
 }
 
-.gallery-img-3 {
-    height: 30vw;
-    background: url("../images/mn.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.picture-transition img.top-pic {
+    animation-name: picsFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
 }
 
-.gallery-img-4 {
-    height: 30vw;
-    background: url("../images/pt.jpg") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.picture-section {
-    color: #fff;
+.transition-pic {
+    width: 100%;
+    height: 250px;
+    border-radius: 5%;
+    border: solid 15px #000;
+    -webkit-box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.36);
 }
 
 /*------------------------------------Hire Us Section*/
 
-.fa.fa-birthday-cake {
-    font-size: 40vw;
+.hire-us-btn {
+    color: #fff;
+    background-color: #ff5f5f;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
 }
 
 /*------------------------------------Footer*/
 
-.fa {
+footer {
+    color: #fff;
+}
+
+.fab {
+    color: #fff;
     font-size: 40px;
     letter-spacing: 30px;
 }
 
 h3 {
-    font-size: 4vw;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.footer-padding {
+    padding: 20px 15px;
+}
+
+/*------------------------------------Animations*/
+
+@keyframes picsFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*------------------------------------Media Queries*/
 
+@media screen and (min-width: 576px) {
+
+    .link-img {
+        width: 50%;
+    }
+
+    .welcome-pic {
+        height: 250px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .navbar-brand {
+        width: 160px;
+        height: 80px;
+    }
 
     p {
-        font-size: 1.7vw;
-        margin: 0 0 15px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 2em;
+    }
+
+    .video-section-para,
+    .music-cat-para {
+        text-align: left;
     }
 
     h2 {
-        font-size: 4vw;
+        font-size: 40px;
+        letter-spacing: 7px;
+        padding-bottom: 15px;
     }
 
-    h3 {
-        font-size: 3vw;
+    .strap-line {
+        font-size: 30px;
+        letter-spacing: 7px;
+        padding-bottom: 0px;
     }
 
-    .music-cat {
-        padding: 50px 30px 50px 0;
+    .link-img {
+        width: 90%;
+        max-width: 375px;
+    }
+
+    .fas {
+        font-size: 30px;
+    }
+
+    .fa-heart {
+        font-size: 50px;
+    }
+
+    .Monkees-header {
+        font-size: 60px;
+    }
+
+    .welcome-pic {
+        height: 300px;
+    }
+
+    .over-pic {
+        top: 100%;
+    }
+
+    .over-pic-higher {
+        top: 80%;
+    }
+
+    .hug-text-central {
+        padding: 0 40px;
+    }
+    
+    .padding-fix-left {
+        padding: 0 40px 0 0!important;
+    }
+
+    .padding-fix-right {
+        padding: 0 0 0 40px!important;
     }
 
 }
 
-@media screen and (min-width: 1200px) {
-    .welcome-section {
-        height: 80vh;
-        /*max-width: 1500px;*/
-        margin: 0 auto 15px;
-        background: url("../images/monkeesbw.jpg") no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .intro {
-        font-size: 2vw;
-        line-height: 4vw;
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        width: 200px;
+        height: 100px;
     }
 
     p {
-        font-size: 1.2vw;
-        margin: 0 0 15px;
+        font-size: 20px;
+        line-height: 3em;
     }
 
     h2 {
-        font-size: 3.5vw;
+        font-size: 45px;
+        padding-bottom: 20px;
+        letter-spacing: 20px;
     }
 
-    .music-cat {
-        padding: 75px 30px 75px 0;
+    .strap-line {
+        font-size: 50px;
+    }
+
+    .link-img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .fas {
+        font-size: 35px;
+    }
+
+    .fa-heart {
+        font-size: 60px;
+    }
+
+    .Monkees-header {
+        font-size: 70px;
+    }
+
+    .welcome-pic {
+        height: 320px;
+    }
+
+    .picture-transition {
+        width: 400px;
+    }
+
+
+    .over-pic-higher {
+        top: 77%;
+    }
+
+    .hire-us-btn {
+        font-size: 30px;
+        width: 250px;
+        height: 250px;
     }
 
     h3 {
-        font-size: 2vw;
+        font-size: 30px;
     }
 
-    .content {
-        #position: relative;
-        #top: -50%;
-        margin: 0 auto;
-        width: 53%;
+    .footer-para {
+        font-size: 15px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: 20px;
+        letter-spacing: 1.8px;
+        line-height: 2.1em;
+    }
+
+    h2 {
+        font-size: 45px;
+        letter-spacing: 25px;
+    }
+
+    .strap-line {
+        font-size: 45px;
+        letter-spacing: 8px;
+    }
+
+    .link-img {
+        width: 70%;
+    }
+
+    .fas {
+        font-size: 40px;
+    }
+
+    .fa-heart {
+        font-size: 80px;
+    }
+
+    .Monkees-header {
+        font-size: 120px;
+    }
+
+    .welcome-pic {
+        height: 500px;
+    }
+
+    .over-pic {
+        top: 100%;
+    }
+
+    .over-pic-higher {
+        top: 80%;
+    }
+
+    .picture-transition {
+        height: 350px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .transition-pic {
+        height: 350px;
+    }
+
 }
