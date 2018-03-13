@@ -88,6 +88,11 @@ h2 {
     margin-bottom: 50px;
 }
 
+.larger-margin-bottom {
+    margin-bottom: 150px;
+}
+
+
 .section-seperator-padding {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -236,7 +241,7 @@ a button:hover {
 
 /*------------------------------------Video Section*/
 
-.video-link-img {
+.picture-frame {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -244,10 +249,6 @@ a button:hover {
     -moz-box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
     box-shadow: 14px 22px 22px -7px rgba(0, 0, 0, 0.44);
 }
-
-.video-section {}
-
-/*------------------------------------Video Section*/
 
 /*------------------------------------Picture Gallery*/
 
@@ -341,7 +342,7 @@ h3 {
 /*------------------------------------Video.html*/
 
 .ddbeliever-video {
-    width: 80% ;
+    width: 80%;
     height: auto;
     max-width: 900px;
     border: solid 15px #000;
@@ -349,6 +350,13 @@ h3 {
     -webkit-box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
     box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
+}
+
+/*------------------------------------Gallery.html*/
+
+.gallery-photo {
+    width: 90%;
+    max-height: 500px;
 }
 
 /*------------------------------------Animations*/
@@ -586,9 +594,9 @@ h3 {
     .transition-pic {
         height: 350px;
     }
-    
+
     .ddbeliever-video {
-    border: solid 25px #000;
-}
+        border: solid 25px #000;
+    }
 
 }
