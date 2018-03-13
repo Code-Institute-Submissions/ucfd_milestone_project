@@ -313,6 +313,44 @@ h3 {
     padding: 20px 15px;
 }
 
+/*------------------------------------Listen-Now.html*/
+
+.vinyl-record {
+    width: 80%;
+    height: auto;
+}
+
+.audio-controls {
+    height: 70px;
+    border: solid 20px #fafafa;
+    margin-bottom: 50px;
+}
+
+.audio-controls:hover+.vinyl-record {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.vinyl-title {
+    margin-bottom: 30px;
+}
+
+
+/*------------------------------------Video.html*/
+
+.ddbeliever-video {
+    width: 80% ;
+    height: auto;
+    max-width: 900px;
+    border: solid 15px #000;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
+}
+
 /*------------------------------------Animations*/
 
 @keyframes picsFadeInOut {
@@ -340,30 +378,6 @@ h3 {
     }
 }
 
-
-/*------------------------------------Listen-Now.html*/
-
-.vinyl-record {
-    width: 80%;
-    height: auto;
-}
-
-.audio-controls {
-    height: 70px;
-    border: solid 20px #fafafa;
-    margin-bottom: 50px;
-}
-
-.audio-controls:hover+.vinyl-record {
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.vinyl-title {
-    margin-bottom: 30px;
-}
 
 
 
@@ -572,5 +586,9 @@ h3 {
     .transition-pic {
         height: 350px;
     }
+    
+    .ddbeliever-video {
+    border: solid 25px #000;
+}
 
 }
