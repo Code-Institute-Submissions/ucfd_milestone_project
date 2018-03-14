@@ -37,7 +37,7 @@ h2 {
 .welcome-message-bg {}
 
 .music-cat-bg {
-    background-color: #fdfff4;
+    background-color: #eaf0f7;
 }
 
 .picture-section-bg {
@@ -61,10 +61,6 @@ h2 {
 .centered-block {
     display: block;
     margin: 0 auto;
-}
-
-.small-margin-top {
-    margin-top: 15px;
 }
 
 .small-margin-bottom {
@@ -125,22 +121,6 @@ h2 {
     color: white;
 }
 
-.over-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.over-pic-higher {
-    position: absolute;
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
 .hug-text-central {
     padding: 0 10%;
 }
@@ -171,27 +151,6 @@ h2 {
 
 .nav-item {
     padding: 10px 0;
-}
-
-.navbar-toggler {}
-
-.navbar-toggle-icon {}
-
-/*--------------------------------------------Hover.css*/
-
-a i:hover {
-    color: #e80e0e;
-
-}
-
-a button:hover {
-    background-color: #e80e0e;
-}
-
-.grow:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 /*------------------------------------Header*/
@@ -269,12 +228,24 @@ a button:hover {
     animation-name: slideInFromTop4th;
 }
 
+.over-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.over-pic-higher {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
 
 /*------------------------------------Music Catalogue*/
 
-.music-cat-section {
-    color: #000;
-}
 
 /*------------------------------------Video Section*/
 
@@ -320,10 +291,6 @@ a button:hover {
 }
 
 /*------------------------------------Hire Us Section*/
-
-.hire-section-para {
-    vertical-align: middle;
-}
 
 .hire-us-btn {
     color: #fff;
@@ -406,7 +373,7 @@ h3 {
 
 .gallery-photo {
     width: 90%;
-    max-height: 700px;
+    max-height: 500px;
 }
 
 /*------------------------------------Modal*/
@@ -427,6 +394,22 @@ h3 {
     height: 200px;
 }
 
+/*--------------------------------------------Hover.css*/
+
+a i:hover {
+    color: #e80e0e;
+
+}
+
+a button:hover {
+    background-color: #e80e0e;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 /*------------------------------------Animations*/
 
@@ -459,7 +442,7 @@ h3 {
     0% {
         transform: translateY(-100%);
     }
-    
+
     25% {
         transform: translateY(0%);
     }
@@ -469,7 +452,7 @@ h3 {
     0% {
         transform: translateY(-100%);
     }
-    
+
     50% {
         transform: translateY(0%);
     }
@@ -479,7 +462,7 @@ h3 {
     0% {
         transform: translateY(-200%);
     }
-    
+
     75% {
         transform: translateY(0%);
     }
@@ -489,12 +472,11 @@ h3 {
     0% {
         transform: translateY(-200%);
     }
-    
+
     100% {
         transform: translateY(0%);
     }
 }
-
 
 /*------------------------------------Media Queries*/
 
@@ -592,8 +574,8 @@ h3 {
     }
 
     p {
-        font-size: 20px;
-        line-height: 3em;
+        font-size: 18px;
+        line-height: 2.5em;
     }
 
     h2 {
@@ -658,12 +640,12 @@ h3 {
     }
 
     .navbar-brand {
-        width: 300px;
-        height: 200px;
+        width: 220px;
+        height: 110px;
     }
 
     p {
-        font-size: 28px;
+        font-size: 22px;
         letter-spacing: 1.8px;
         line-height: 2.1em;
     }
@@ -675,7 +657,7 @@ h3 {
 
     .strap-line {
         font-size: 45px;
-        letter-spacing: 8px;
+        letter-spacing: 16px;
     }
 
     .link-img {
@@ -730,11 +712,11 @@ h3 {
     }
 
     .padding-fix-left {
-        padding: 0 150px 0 0!important;
+        padding: 0 10% 0 0!important;
     }
 
     .padding-fix-right {
-        padding: 0 0 0 150px!important;
+        padding: 0 0 0 10%!important;
     }
 
     .hug-text-central {
@@ -754,7 +736,7 @@ h3 {
 
 @media screen and (min-width: 1500px) {
     .welcome-pic {
-        height: 700px;
+        height: 550px;
     }
 
     h3 {
@@ -770,6 +752,6 @@ h3 {
     }
 
     .container-with-gutter {
-        padding: 0 10%;
+        padding: 0 5%;
     }
 }
