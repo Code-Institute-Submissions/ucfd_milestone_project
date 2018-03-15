@@ -13,6 +13,19 @@
 </head>
 
 <body>
+    <!-- Sign Up -->
+    <div class="container-fluid sign-up-section-bg sign-up-section">
+        <div class="row">
+            <div class="col-8">
+                <div class="sign-up-para">Want to keep up to date with new material?!</div>
+            </div>
+            <div class="col-4">
+                <button class="sign-up-btn btn uppercase grow float-right" data-toggle="modal" data-target="#Sign-Up-Modal" type="button">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.Sign Up -->
+    
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-light bottom-inner-shadow" id="nav-bar-on-top">
@@ -228,7 +241,7 @@
     </footer>
     <!-- /.Footer -->
 
-    <!-- Modal -->
+    <!-- Hire Us Modal -->
     <div class="modal fade" id="Hire-Us-Modal-Center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -273,7 +286,44 @@
             </div>
         </div>
     </div>
-    <!-- /.Modal -->
+    <!-- /.Hire Us Modal -->
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="Sign-Up-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="navbar-brand cover-picture"></div>
+                    <h5 class="modal-title uppercase text-center xl-margin-top" id="exampleModalLongTitle">Sign Up Today!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-paragraph">Are you a fan of our music?!</p>
+                    <p class="modal-paragraph">Please sign up to our mailing list and we will keep you up to date with news and any future releases!</p>
+                    <hr>
+                    <form action="#" method="post">
+                        <div>
+                            <label class="modal-label" for="name">Full Name:</label>
+                            <input class="modal-box" type="text" id="name" name="user_name" placeholder="Your Name..." required>
+                        </div>
+                        <div>
+                            <label class="modal-label" for="email">Email:</label>
+                            <input class="modal-box" type="email" id="email" name="user_mail" placeholder="TheMonkees@music.com..." required>
+                        </div>
+                        <div>
+                            <h6 class="text-center uppercase">We'll be in touch!</h6>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn modal-sign-up-btn uppercase grow centered-block">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Sign Up Modal -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
