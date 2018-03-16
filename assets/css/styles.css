@@ -34,8 +34,6 @@ h2 {
 
 /*------------------------------------Colors*/
 
-.welcome-message-bg {}
-
 .music-cat-bg {
     background-color: #eaf0f7;
 }
@@ -189,8 +187,6 @@ h2 {
     padding: 10px 0;
 }
 
-/*------------------------------------Header*/
-
 /*------------------------------------Welcome*/
 
 .fa-heart {
@@ -243,25 +239,25 @@ h2 {
 .slide-in {
     animation-delay: 0s;
     animation-direction: normal;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
 
 .slide-in-first {
-    animation-name: slideInFromTop1st;
+    animation-name: slideInFromRight1st;
 }
 
 .slide-in-second {
-    animation-name: slideInFromTop2nd;
+    animation-name: slideInFromLeft1st;
 }
 
 .slide-in-third {
-    animation-name: slideInFromTop3rd;
+    animation-name: slideInFromLeft2nd;
 }
 
 .slide-in-fourth {
-    animation-name: slideInFromTop4th;
+    animation-name: slideInFromRight2nd;
 }
 
 .over-pic {
@@ -473,12 +469,52 @@ a button:hover {
     }
 }
 
+@keyframes slideInFromLeft1st {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight1st {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromLeft2nd {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight2nd {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 @keyframes slideInFromTop1st {
     0% {
         transform: translateY(-100%);
     }
 
-    25% {
+    35% {
         transform: translateY(0%);
     }
 }
@@ -495,7 +531,7 @@ a button:hover {
 
 @keyframes slideInFromTop3rd {
     0% {
-        transform: translateY(-200%);
+        transform: translateY(-100%);
     }
 
     75% {
@@ -505,10 +541,10 @@ a button:hover {
 
 @keyframes slideInFromTop4th {
     0% {
-        transform: translateY(-200%);
+        transform: translateY(-100%);
     }
 
-    100% {
+    90% {
         transform: translateY(0%);
     }
 }
@@ -599,6 +635,26 @@ a button:hover {
         letter-spacing: 1.4px;
         line-height: 1.5em;
     }
+    
+    .slide-in {
+    animation-duration: 2s;
+    }
+
+    .slide-in-first {
+        animation-name: slideInFromTop1st;
+    }
+
+    .slide-in-second {
+        animation-name: slideInFromTop2nd;
+    }
+
+    .slide-in-third {
+        animation-name: slideInFromTop3rd;
+    }
+
+    .slide-in-fourth {
+        animation-name: slideInFromTop4th;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -612,7 +668,7 @@ a button:hover {
         font-size: 18px;
         line-height: 2.5em;
     }
-    
+
     .sign-up-section {
         height: 60px;
         text-align: ;
@@ -636,7 +692,7 @@ a button:hover {
         width: 100px;
         padding: 5px 0;
     }
-    
+
     h2 {
         font-size: 45px;
         letter-spacing: 20px;
