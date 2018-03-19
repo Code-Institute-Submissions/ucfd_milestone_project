@@ -14,7 +14,8 @@ p {
     font-weight: 400;
     letter-spacing: 1.5px;
     line-height: 2em;
-    margin: 30px 0 30px;
+    margin: 15px 0 15px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -35,6 +36,33 @@ h2 {
 
 .hide-overflow {
     overflow-x: hidden;
+}
+
+.smooth-transition {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.modal-hire-us-btn,
+.sign-up-modal-btn,
+.hire-us-btn {
+    color: #fff;
+    background-color: #ff5f5f;
+    width: 100%;
+    max-width: 700px;
+}
+
+.bottom-inner-shadow {
+    -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: inset 0px 0px 17px -5px rgba(0, 0, 0, 0.67);
+    box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.67);
+}
+
+.hold-img-and-text {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 /*------------------------------------Colors*/
@@ -83,7 +111,7 @@ h2 {
 }
 
 .large-margin-top {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .xl-margin-top {
@@ -91,17 +119,16 @@ h2 {
 }
 
 .large-margin-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .larger-margin-bottom {
     margin-bottom: 150px;
 }
 
-
 .section-seperator-padding {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .medium-padding-bottom {
@@ -113,20 +140,9 @@ h2 {
 }
 
 .top-and-bottom-padding {
-    padding: 50px 0;
+    padding: 15px 0;
 }
 
-.bottom-inner-shadow {
-    -webkit-box-shadow: inset 20px 20px 20px 20px rgba(0, 0, 0, 0.67);
-    -moz-box-shadow: inset 0px 0px 17px -5px rgba(0, 0, 0, 0.67);
-    box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.67);
-}
-
-.hold-img-and-text {
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
 .hug-text-central {
     padding: 0 10%;
@@ -134,13 +150,13 @@ h2 {
 
 .link-img {
     width: 70%;
+    max-width: 400px;
 }
 
-/*------------------------------------Sign-up*/
+/*------------------------------------(PAGE 1) Sign-up*/
 
 .sign-up-section {
     height: 32px;
-    text-align: ;
     position: relative;
     z-index: 50;
     color: #fff;
@@ -153,19 +169,13 @@ h2 {
 }
 
 .sign-up-btn {
-    margin: 8px 0 0 0;
+    margin: 7px 0 0 0;
     background-color: #fff;
     color: #000;
     font-size: 8px;
     border-radius: 50px;
     width: 55px;
-    padding: 2px 0;
-}
-
-.modal-sign-up-btn {
-    background-color: #000;
-    color: #fff;
-    border-radius: 50px;
+    padding: 4px 0 2px;
 }
 
 /*------------------------------------Navbar*/
@@ -190,6 +200,11 @@ h2 {
 
 .nav-item {
     padding: 10px 0;
+}
+
+.li-text-grow {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 /*------------------------------------Welcome*/
@@ -275,7 +290,7 @@ h2 {
 
 .over-pic-higher {
     position: absolute;
-    top: 39%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -297,9 +312,10 @@ h2 {
 /*------------------------------------Picture Gallery*/
 
 .picture-transition {
+    max-width: 400px;
     position: relative;
-    height: 250px;
-    width: 320px;
+    height: 200px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -318,7 +334,7 @@ h2 {
 
 .transition-pic {
     width: 100%;
-    height: 250px;
+    height: 220px;
     border-radius: 5%;
     border: solid 15px #000;
     -webkit-box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.36);
@@ -328,22 +344,6 @@ h2 {
 
 /*------------------------------------Hire Us Section*/
 
-.hire-us-btn {
-    color: #fff;
-    background-color: #ff5f5f;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%
-}
-
-.modal-hire-us-btn {
-    color: #fff;
-    background-color: #ff5f5f;
-    width: 250px;
-    height: 35px;
-    border-radius: 3%
-}
-
 /*------------------------------------Footer*/
 
 footer {
@@ -352,7 +352,7 @@ footer {
 
 .fab {
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
     letter-spacing: 30px;
 }
 
@@ -366,7 +366,7 @@ h3 {
     padding: 20px 15px;
 }
 
-/*------------------------------------Listen-Now.html*/
+/*------------------------------------(PAGE 2) Listen-Now.html*/
 
 .vinyl-record {
     width: 80%;
@@ -392,7 +392,7 @@ h3 {
 }
 
 
-/*------------------------------------Video.html*/
+/*------------------------------------(PAGE 3) Video.html*/
 
 .ddbeliever-video {
     width: 90%;
@@ -405,7 +405,7 @@ h3 {
     box-shadow: 0px 20px 30px -12px rgba(0, 0, 0, 0.72);
 }
 
-/*------------------------------------Gallery.html*/
+/*------------------------------------(PAGE 4) Gallery.html*/
 
 .gallery-photo {
     width: 90%;
@@ -422,19 +422,34 @@ h3 {
 }
 
 .modal-box {
-    width: 70%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .modal-box-details {
     height: 200px;
 }
 
+.modal-title {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+.date-box {}
+
 /*--------------------------------------------Hover.css*/
 
-a i:hover {
-    color: #e80e0e;
+.fa-facebook:hover {
+    color: #3b5998;
+}
 
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
 }
 
 a button:hover {
@@ -442,6 +457,12 @@ a button:hover {
 }
 
 .grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.li-text-grow:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -556,17 +577,6 @@ a button:hover {
 
 /*------------------------------------Media Queries*/
 
-@media screen and (min-width: 576px) {
-
-    .link-img {
-        width: 50%;
-    }
-
-    .welcome-pic {
-        height: 250px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .navbar-brand {
         width: 160px;
@@ -574,9 +584,14 @@ a button:hover {
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1.5px;
         line-height: 2em;
+    }
+
+    .section-seperator-padding {
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     .video-section-para,
@@ -594,9 +609,22 @@ a button:hover {
         letter-spacing: 7px;
     }
 
+    .no-margin-top {
+        margin-top: 0!important;
+    }
+
     .link-img {
-        width: 90%;
+        width: 80%;
         max-width: 375px;
+    }
+
+    .picture-transition {
+        height: 400px;
+        max-width: 700px;
+    }
+
+    .transition-pic {
+        height: 420px;
     }
 
     .fas {
@@ -635,14 +663,22 @@ a button:hover {
         padding: 0 0 0 40px!important;
     }
 
+    .modal-dialog {
+        max-width: 620px;
+    }
+
+    .modal-box {
+        font-size: 24px;
+    }
+
     .modal-paragraph {
         font-size: 20px;
         letter-spacing: 1.4px;
         line-height: 1.5em;
     }
-    
+
     .slide-in {
-    animation-duration: 2s;
+        animation-duration: 2s;
     }
 
     .slide-in-first {
@@ -660,10 +696,32 @@ a button:hover {
     .slide-in-fourth {
         animation-name: slideInFromTop4th;
     }
+
+    .sign-up-section {
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .sign-up-btn {
+        margin: 8px 0 0 0;
+        font-size: 10px;
+        width: 60px;
+    }
+
+    .modal-hire-us-btn,
+    .hire-us-btn,
+    .sign-up-modal-btn {
+        font-size: 22px;
+    }
+
+    .hire-section-para {
+        text-align: left;
+    }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {}
 
+@media screen and (min-width: 1200px) {
     .navbar-brand {
         width: 200px;
         height: 100px;
@@ -671,117 +729,45 @@ a button:hover {
 
     p {
         font-size: 18px;
-        line-height: 2.5em;
+        letter-spacing: 2px;
+        line-height: 2.2em;
     }
 
-    .sign-up-section {
-        height: 60px;
-        text-align: ;
-        position: relative;
-        z-index: 50;
-        color: #fff;
-        font-size: 16px;
-    }
-
-    .sign-up-para {
-        margin-top: 20px;
-        white-space: nowrap;
-    }
-
-    .sign-up-btn {
-        margin: 12px 0 0 0;
-        background-color: #fff;
-        color: #000;
-        font-size: 16px;
-        border-radius: 50px;
-        width: 100px;
-        padding: 5px 0;
-    }
-
-    h2 {
-        font-size: 45px;
-        letter-spacing: 20px;
-    }
-
-    .strap-line {
-        font-size: 50px;
-    }
-
-    .link-img {
-        width: 80%;
-        max-width: 400px;
-    }
-
-    .fas {
-        font-size: 35px;
-    }
-
-    .fa-heart {
-        font-size: 60px;
+    .section-seperator-padding {
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 
     .Monkees-header {
-        font-size: 70px;
+        font-size: 100px;
+        letter-spacing: 8px;
     }
 
     .welcome-pic {
-        height: 350px;
-    }
-
-    .picture-transition {
-        width: 400px;
-    }
-
-
-    .over-pic-higher {
-        top: 77%;
-    }
-
-    .hire-us-btn {
-        font-size: 30px;
-        width: 250px;
-        height: 250px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    .footer-para {
-        font-size: 15px;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    .collapse .navbar-nav .nav-item .nav-link {
-        font-size: 26px;
-        padding: 0 20px;
-    }
-
-    .navbar-brand {
-        width: 220px;
-        height: 110px;
-    }
-
-    p {
-        font-size: 22px;
-        letter-spacing: 1.8px;
-        line-height: 2.1em;
+        height: 400px;
     }
 
     h2 {
-        font-size: 45px;
-        letter-spacing: 25px;
+        font-size: 48px;
+        letter-spacing: 10px;
     }
 
     .strap-line {
-        font-size: 45px;
-        letter-spacing: 16px;
+        font-size: 40px;
+        letter-spacing: 8px;
     }
 
     .link-img {
-        max-width: 550px;
+        width: 85%;
+        max-width: 400px;
+    }
+
+    .picture-transition {
+        height: 450px;
+    }
+
+    .transition-pic {
+        height: 440px;
     }
 
     .fas {
@@ -789,89 +775,49 @@ a button:hover {
     }
 
     .fa-heart {
-        font-size: 80px;
-    }
-
-    .Monkees-header {
-        font-size: 150px;
+        font-size: 60px;
     }
 
     .welcome-pic {
-        height: 460px;
-    }
-
-    .over-pic {
-        top: 100%;
+        height: 400px;
     }
 
     .over-pic-higher {
-        top: 80%;
-    }
-
-    .picture-transition {
-        height: 550px;
-        width: 700px;
-        margin: 0 auto;
-    }
-
-    .transition-pic {
-        height: 550px;
-    }
-
-    .ddbeliever-video {
-        border: solid 25px #000;
-    }
-
-    .footer-para {
-        font-size: 18px;
-    }
-
-    .fab {
-        font-size: 55px;
-        letter-spacing: 70px;
+        top: 78%;
     }
 
     .padding-fix-left {
-        padding: 0 10% 0 0!important;
+        padding: 0 70px 0 0!important;
     }
 
     .padding-fix-right {
-        padding: 0 0 0 10%!important;
-    }
-
-    .hug-text-central {
-        padding: 75px 40px;
-    }
-
-    .hire-us-btn {
-        width: 300px;
-        height: 300px;
-    }
-
-    .modal-dialog {
-        max-width: 1000px;
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .welcome-pic {
-        height: 550px;
-    }
-
-    h3 {
-        font-size: 45px;
-    }
-
-    .container {
-        max-width: 1400px;
+        padding: 0 0 0 70px!important;
     }
 
     .photos-grid {
-        padding: 0 10%;
+        margin: 0 120px;
     }
 
-    .container-with-gutter {
-        padding: 0 5%;
+    .modal-dialog {
+        max-width: 700px;
+    }
+
+    .sign-up-section {
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .sign-up-btn {
+        margin: 8px 0 0 0;
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .sign-up-modal-btn {
+        font-size: 26px;
+    }
+
+    .fab {
+        font-size: 40px;
     }
 }
