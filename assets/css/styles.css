@@ -126,6 +126,10 @@ h2 {
     margin-bottom: 150px;
 }
 
+.photos-margin-bottom {
+    margin-bottom: 75px;
+}
+
 .section-seperator-padding {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -819,5 +823,9 @@ a button:hover {
 
     .fab {
         font-size: 40px;
+    }
+
+    .photos-margin-bottom {
+        margin-bottom: 125px;
     }
 }
