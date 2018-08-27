@@ -5,22 +5,23 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     line-height: 2em;
-    margin: 15px 0 15px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 5px;
     text-shadow: 2px 1px 10px #fafaf7;
 }
@@ -65,6 +66,39 @@ h2 {
     color: white;
 }
 
+.wiggle {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    -ms-animation-name: shake;
+    -ms-animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+.beat {
+    -webkit-animation-name: beat;
+    -ms-animation-name: beat;
+    -ms-animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
 /*------------------------------------Colors*/
 
 .music-cat-bg {
@@ -98,34 +132,6 @@ h2 {
     margin: 0 auto;
 }
 
-.small-margin-bottom {
-    margin-bottom: 15px;
-}
-
-.medium-margin-top {
-    margin-top: 30px;
-}
-
-.medium-margin-bottom {
-    margin-bottom: 50px;
-}
-
-.large-margin-top {
-    margin-top: 30px;
-}
-
-.xl-margin-top {
-    margin-top: 150px;
-}
-
-.large-margin-bottom {
-    margin-bottom: 30px;
-}
-
-.larger-margin-bottom {
-    margin-bottom: 150px;
-}
-
 .photos-margin-bottom {
     margin-bottom: 75px;
 }
@@ -135,19 +141,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-.medium-padding-bottom {
-    padding-bottom: 30px;
-}
-
-.medium-padding-top {
-    padding-top: 30px;
-}
-
-.top-and-bottom-padding {
-    padding: 15px 0;
-}
-
-
 .hug-text-central {
     padding: 0 10%;
 }
@@ -155,6 +148,34 @@ h2 {
 .link-img {
     width: 70%;
     max-width: 400px;
+    margin: 20px auto;
+}
+
+
+.content-section {
+    min-height: 325px;
+    padding: 60px 0;
+}
+
+.content-section:nth-of-type(1) {
+    padding: 30px 0;
+}
+
+.max-width-holder {
+    max-width: 1200px;
+}
+
+.section-title {
+    padding: 30px 0;
+}
+
+.section-para {
+    padding: 30px 0;
+    font-size: 10px;
+}
+
+.section-para:nth-of-type(2) {
+    padding: 0 0 30px;
 }
 
 /*------------------------------------(PAGE 1) Sign-up*/
@@ -168,12 +189,12 @@ h2 {
 }
 
 .sign-up-para {
-    margin-top: 10px;
+    margin-top: 11px;
     white-space: nowrap;
 }
 
 .sign-up-btn {
-    margin: 7px 0 0 0;
+    margin: 6px 0 0 0;
     background-color: #fff;
     color: #000;
     font-size: 8px;
@@ -183,6 +204,14 @@ h2 {
 }
 
 /*------------------------------------Navbar*/
+
+header {
+    min-height: 80px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
 
 #nav-bar-on-top {
     z-index: 100;
@@ -203,7 +232,7 @@ h2 {
 }
 
 .nav-item {
-    padding: 10px 0;
+    padding: 0;
 }
 
 .li-text-grow {
@@ -211,17 +240,40 @@ h2 {
     margin-left: 10px;
 }
 
+.navbar-toggler {
+    transition: ease-in background-color .5s;
+}
+
+.navbar-toggler:hover {
+    border: 1px solid #ffadad;
+    border-radius: 10%;
+    background-color: #ffadad;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgba(145, 145, 145, 0.67);
+    padding: 17px 0;
+}
+
 /*------------------------------------Welcome*/
 
 .fa-heart {
     font-size: 35px;
     color: #ff5f5f;
+    text-shadow: 0px 2px 5px #ff5f5f;
+    margin: 0;
+    padding: 0 0 10px 4px;
 }
 
 .Monkees-header {
+    width: 100%;
     font-size: 40px;
     color: #fff;
-    width: 100%;
+    max-width: 500px;
     font-weight: 900;
     letter-spacing: 5px;
     text-shadow: 0px 5px 10px #ff5f5f;
@@ -230,6 +282,15 @@ h2 {
 
 .welcome-pic {
     height: 200px;
+}
+
+.welcome-paragraph {
+    padding: 30px 0 0;
+    color: #8a7a7a;
+}
+
+.welcome-paragraph:nth-of-type(3) {
+    padding: 30px 0 50px;
 }
 
 .pic1 {
@@ -258,6 +319,8 @@ h2 {
 
 .strap-line {
     font-size: 20px;
+    color: #000;
+    padding: 30px 0 0;
 }
 
 .slide-in {
@@ -269,11 +332,11 @@ h2 {
 }
 
 .slide-in-first {
-    animation-name: slideInFromRight1st;
+    animation-name: slideInFromLeft1st;
 }
 
 .slide-in-second {
-    animation-name: slideInFromLeft1st;
+    animation-name: slideInFromRight1st;
 }
 
 .slide-in-third {
@@ -286,21 +349,23 @@ h2 {
 
 .over-pic {
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 
 .over-pic-higher {
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 10;
 }
 
 /*------------------------------------Music Catalogue*/
+
+.rounded-circle {
+    -webkit-box-shadow: 14px 10px 26px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 26px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 10px 26px -4px rgba(0, 0, 0, 0.75);
+}
 
 /*------------------------------------Video Section*/
 
@@ -318,7 +383,7 @@ h2 {
 .picture-transition {
     max-width: 400px;
     position: relative;
-    height: 200px;
+    min-height: 220px;
     width: 80%;
     margin: 0 auto;
 }
@@ -370,6 +435,11 @@ h3 {
     padding: 20px 15px;
 }
 
+.footer-para {
+    margin: 0 0 20px;
+    color: #fff;
+}
+
 /*------------------------------------(PAGE 2) Listen-Now.html*/
 
 .vinyl-record {
@@ -380,7 +450,6 @@ h3 {
 .audio-controls {
     width: 80%;
     height: 70px;
-    border: solid 20px #fafafa;
     margin-bottom: 50px;
 }
 
@@ -501,81 +570,194 @@ a button:hover {
 
 @keyframes slideInFromLeft1st {
     0% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
+        opacity: 0;
     }
 
     50% {
         transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromRight1st {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     50% {
         transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromLeft2nd {
     0% {
         transform: translateX(-200%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
     }
 
     100% {
         transform: translateX(0%);
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromRight2nd {
     0% {
         transform: translateX(200%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
     }
 
     100% {
         transform: translateX(0%);
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromTop1st {
     0% {
         transform: translateY(-100%);
+        opacity: 0;
     }
 
     35% {
         transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromTop2nd {
     0% {
         transform: translateY(-100%);
+        opacity: 0;
     }
 
     50% {
         transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromTop3rd {
     0% {
         transform: translateY(-100%);
+        opacity: 0;
     }
 
     75% {
         transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
 @keyframes slideInFromTop4th {
     0% {
         transform: translateY(-100%);
+        opacity: 0;
     }
 
     90% {
         transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(.5deg);
+    }
+    10% {
+        transform: rotate(-.5deg);
+    }
+    20% {
+        transform: rotate(.5deg);
+    }
+    30% {
+        transform: rotate(-.5deg);
+    }
+    40% {
+        transform: rotate(.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes beat {
+    0% {
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+    20% {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    30% {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    40% {
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    60% {
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
     }
 }
 
@@ -587,15 +769,41 @@ a button:hover {
         height: 80px;
     }
 
+    header {
+        min-height: 100px;
+    }
+
+    .nav-link {
+        border-bottom: none;
+    }
+
+    .nav-link .fas {
+        font-size: 26px;
+    }
+
+    .nav-item {
+        padding: 0 0 0 10px;
+    }
+
     p {
         font-size: 14px;
         letter-spacing: 1.5px;
         line-height: 2em;
+        margin: 0;
+        padding: 0;
     }
 
     .section-seperator-padding {
         padding-top: 50px;
         padding-bottom: 30px;
+    }
+
+    .music-cat-para:nth-of-type(1) {
+        padding-top: 0;
+    }
+
+    .section-para {
+        font-size: 12px;
     }
 
     .video-section-para,
@@ -622,8 +830,12 @@ a button:hover {
         max-width: 375px;
     }
 
+    .rounded-circle {
+        width: 72%;
+    }
+
     .picture-transition {
-        height: 400px;
+        height: 452px;
         max-width: 700px;
     }
 
@@ -635,8 +847,12 @@ a button:hover {
         font-size: 30px;
     }
 
+    li .fas {
+        padding: 0 10px 0 0;
+    }
+
     .fa-heart {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .Monkees-header {
@@ -647,8 +863,12 @@ a button:hover {
         height: 300px;
     }
 
+    .welcome-paragraph:nth-of-type(1) {
+        padding: 90px 0 0;
+    }
+
     .over-pic {
-        top: 100%;
+        top: 87%;
     }
 
     .over-pic-higher {
@@ -707,7 +927,6 @@ a button:hover {
     }
 
     .sign-up-btn {
-        margin: 8px 0 0 0;
         font-size: 10px;
         width: 60px;
     }
@@ -723,18 +942,43 @@ a button:hover {
     }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+
+    .section-para {
+        font-size: 14px;
+    }
+
+    .vinyl-record {
+        width: 60%;
+    }
+
+    .ddbeliever-video {
+        width: 62%;
+    }
+}
 
 @media screen and (min-width: 1200px) {
+    .navbar {
+        margin: 0 auto;
+    }
+
     .navbar-brand {
-        width: 200px;
-        height: 100px;
+        width: 140px;
+        height: 80px;
+    }
+
+    header {
+        min-height: 100px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 2px;
         line-height: 2.2em;
+    }
+
+    .max-width-holder {
+        margin: 0 auto;
     }
 
     .section-seperator-padding {
@@ -745,10 +989,11 @@ a button:hover {
     .Monkees-header {
         font-size: 100px;
         letter-spacing: 8px;
+        max-width: 1190px;
     }
 
     .welcome-pic {
-        height: 400px;
+        height: 360px;
     }
 
     h2 {
@@ -759,15 +1004,25 @@ a button:hover {
     .strap-line {
         font-size: 40px;
         letter-spacing: 8px;
+        padding: 58px 0 0;
+    }
+
+    .content-section .fas {
+        padding: 40px 0 0;
     }
 
     .link-img {
         width: 85%;
-        max-width: 400px;
+        max-width: 300px;
+    }
+
+    .music-cat-bg {
+        min-height: 700px;
     }
 
     .picture-transition {
         height: 450px;
+        max-width: 666px;
     }
 
     .transition-pic {
@@ -778,12 +1033,16 @@ a button:hover {
         font-size: 40px;
     }
 
+    li .fas {
+        padding: 0 15px 0 0;
+    }
+
     .fa-heart {
         font-size: 60px;
     }
 
-    .welcome-pic {
-        height: 400px;
+    .over-pic {
+        top: 82%;
     }
 
     .over-pic-higher {
@@ -812,7 +1071,6 @@ a button:hover {
     }
 
     .sign-up-btn {
-        margin: 8px 0 0 0;
         font-size: 16px;
         width: 100px;
     }
@@ -827,5 +1085,11 @@ a button:hover {
 
     .photos-margin-bottom {
         margin-bottom: 125px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .welcome-pic {
+        height: 580px;
     }
 }
